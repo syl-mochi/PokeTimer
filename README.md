@@ -1,1 +1,1 @@
-# PokemonTimer
+# PokeTimer
