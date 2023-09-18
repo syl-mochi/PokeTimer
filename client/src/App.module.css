@@ -1,0 +1,6 @@
+/* Setting styles that will be scoped to the App component and its children */
+
+.example {
+    color: blue;
+    background-color: #11ffff;
+}
