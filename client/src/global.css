@@ -1,1 +1,19 @@
-/* Setting global styles, fonts, etc. */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/* Set global styles, fonts, etc. here */
+
+:root {
+    --main-bg-color: whitesmoke;
+    --primary-color: #4964ab;
+    --secondary-color: #d2dbf4;
+    --gray-darkest: #333333;
+    --gray-darker: #666666;
+    --gray-regular: #999999;
+    --gray-lighter: #cccccc;
+    --gray-lightest: #eeeeee;
+}
+
+body {
+    background-color: var(--main-bg-color, whitesmoke);
+    font-family: "Rubik", sans-serif;
+}

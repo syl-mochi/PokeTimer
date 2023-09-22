@@ -1,6 +1,6 @@
-/* Setting styles that will be scoped to the App component and its children */
+/* Set styles that will be scoped to the App component and its children here */
 
 .example {
-    color: blue;
-    background-color: #11ffff;
+    color: var(--primary-color, green);
+    background-color: var(--secondary-color, lightgreen);
 }
