@@ -17,8 +17,8 @@ app.get("/", (req, res) => {
 
 /** Give the pokemon data(id, name, sprite) of the associated given id in JSON*/
 app.get("/getPokemon", async (req, res) => {
-    var companion = await api.getPokemon(req.query.id);
-    var companionJSON = JSON.stringify(companion);
+    let companion = await api.getPokemon(req.query.id);
+    let companionJSON = JSON.stringify(companion);
     res.send(companionJSON);
 });
 

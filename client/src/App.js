@@ -10,19 +10,21 @@ function App() {
             <div className={styles.example}>Pretend there is Squirtle</div>
             <Countdown />
 
-            <button type="button" onClick={getCompanionJSON(179)}>
+            <button type="button" onClick={() => getCompanionJSON(179)}>
                 mareep
             </button>
         </>
     );
 }
 
-function getCompanionJSON(id) {
-    var companionJSON = async () =>
-        await axios
-            .get(getPokemonByID.concat(id))
-            .then((res) => console.log(res))
-            .catch((err) => console.log(err.message));
+async function getCompanionJSON(id) {
+    let companionJSON;
+    await axios
+        .get(getPokemonByID.concat(id))
+        .then((res) => (companionJSON = res))
+        .catch((error) => console.log(error.message));
+
+    console.log(companionJSON);
     return companionJSON;
 }
 
