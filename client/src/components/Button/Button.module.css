@@ -1,0 +1,6 @@
+.button {
+    color: var(--gray-darkest, #333333);
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}

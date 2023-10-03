@@ -1,6 +1,9 @@
-import styles from "./App.module.css";
-import Countdown from "./components/Countdown/Countdown";
+import React from "react";
 import axios from "axios";
+import styles from "./App.module.css";
+
+import Countdown from "./components/Countdown/Countdown";
+import Button from "./components/Button/Button";
 
 const getPokemonByID = "http://localhost:5000/getPokemon?id=";
 
@@ -9,6 +12,9 @@ function App() {
         <>
             <div className={styles.example}>Pretend there is Squirtle</div>
             <Countdown />
+
+            <Button>Start</Button>
+            <Button>Reset</Button>
 
             <button type="button" onClick={() => getCompanionJSON(179)}>
                 mareep
