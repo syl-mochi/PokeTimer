@@ -16,4 +16,5 @@
 body {
     background-color: var(--main-bg-color, whitesmoke);
     font-family: "Rubik", sans-serif;
+    color: var(--gray-darkest, #333333);
 }
