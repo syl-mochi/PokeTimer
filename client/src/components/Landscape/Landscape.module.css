@@ -1,34 +1,48 @@
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
 .landscape {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
     height: 60vh;
-    width: 200vh;
+    /* width: 200vh; */
+
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
     background-image: url(../../Assets/Landscape.png);
     border-radius: 16px;
+
     object-fit: cover;
     margin-left: auto;
     margin-right: auto;
+
     max-width: 99%;
-    position: relative;
 }
 
 .sprite {
-    height: 30vh;
-    width: auto;
-    position: absolute;
-    bottom: 3vh;
-    right: 1vh;
+    order: 2;
+    flex: 0, 0, 0;
+    align-self: flex-end;
+
+    height: 50%;
+    margin-left: auto;
+    margin-block-end: 3%;
 }
 
 .textbox {
+    order: 1;
+    flex: 1, 1, auto;
+    align-self: center;
+
     background-color: aliceblue;
     border: solid 2px;
     border-radius: 8px;
+
     font-size: large;
-    position: absolute;
-    top: 2vh;
-    left: 5vh;
-    margin-right: 5vh;
+    text-align: center;
+
+    margin-inline: 5%;
 }

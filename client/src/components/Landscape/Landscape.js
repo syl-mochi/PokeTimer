@@ -6,18 +6,8 @@ import styles from "./Landscape.module.css";
 function Landscape({ text, sprite }) {
     return (
         <section className={styles.landscape}>
-            <tbody>
-                <td>
-                    <p className={styles.textbox}>{text}</p>
-                </td>
-                <td>
-                    <img
-                        className={styles.sprite}
-                        src={sprite}
-                        alt="companion"
-                    />
-                </td>
-            </tbody>
+            <p className={styles.textbox}>{text}</p>
+            <img className={styles.sprite} src={sprite} alt="companion" />
         </section>
     );
 }

@@ -16,7 +16,7 @@ function App() {
 
             <Landscape
                 text={
-                    "Who's that pokemon? testing a fucking larger text idk what to write here"
+                    "Who's that pokemon? Testing a larger text idk what to write here. Mareep is looking at you fondly."
                 }
                 sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/179.png"
             />
