@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import styles from "./PokemonSprite.module.css";
 import { getSpriteUrl } from "../../helpers/api.helper";
 
 function PokemonSprite({ pokemonId }) {
@@ -13,7 +14,7 @@ function PokemonSprite({ pokemonId }) {
         });
     }, [pokemonId]);
 
-    return <img src={url} alt="Pokemon Sprite" />;
+    return <img className={styles.sprite} src={url} alt="Pokemon Sprite" />;
 }
 
 export default PokemonSprite;

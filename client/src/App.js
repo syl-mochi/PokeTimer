@@ -4,7 +4,6 @@ import styles from "./App.module.css";
 import Countdown from "./components/Countdown/Countdown";
 import Button from "./components/Button/Button";
 import Landscape from "./components/Landscape/Landscape";
-import PokemonSprite from "./components/PokemonSprite/PokemonSprite";
 
 const pokemonID = 179;
 
@@ -21,9 +20,8 @@ function App() {
                 text={
                     "Who's that pokemon? Testing a larger text idk what to write here. Mareep is looking at you fondly."
                 }
-                sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/179.png"
+                pokemonID={id}
             />
-            <PokemonSprite pokemonId={id} />
 
             <Button>Start</Button>
             <Button>Reset</Button>
@@ -32,7 +30,7 @@ function App() {
                 type="button"
                 onClick={() => setId(Math.floor(Math.random() * 1017 + 1))}
             >
-                mareep
+                Random Pokemon
             </button>
         </>
     );

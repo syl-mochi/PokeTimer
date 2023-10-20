@@ -1,13 +1,16 @@
 import React from "react";
 import styles from "./Landscape.module.css";
+import PokemonSprite from "../PokemonSprite/PokemonSprite";
 
 // https://react.dev/learn/passing-props-to-a-component
 
-function Landscape({ text, sprite }) {
+function Landscape({ text, pokemonID }) {
+    // const [id, setId] = useState(pokemonID);
     return (
         <section className={styles.landscape}>
             <p className={styles.textbox}>{text}</p>
-            <img className={styles.sprite} src={sprite} alt="companion" />
+
+            <PokemonSprite pokemonId={pokemonID} />
         </section>
     );
 }
