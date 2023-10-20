@@ -21,16 +21,6 @@
     max-width: 99%;
 }
 
-.sprite {
-    order: 2;
-    flex: 0, 0, 0;
-    align-self: flex-end;
-
-    height: 50%;
-    margin-left: auto;
-    margin-block-end: 3%;
-}
-
 .textbox {
     order: 1;
     flex: 1, 1, auto;
